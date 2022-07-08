@@ -1,0 +1,12 @@
+name: 'G'
+
+N: 288
+
+percentile_params:
+  lower_percentile: 5
+  upper_percentile: 70
+
+evaluation_params:
+  percentile_lower: 1
+  percentile_upper: 99
+  k_list: [2, 1.2, 1.125, 1.125, 2.3, 1.125, 1.2]

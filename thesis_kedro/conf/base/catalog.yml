@@ -1,0 +1,83 @@
+# Here you can define all your data sets by using simple YAML syntax.
+#
+# Documentation for this file format can be found in "The Data Catalog"
+# Link: https://kedro.readthedocs.io/en/stable/data/data_catalog.html
+
+data_G:
+  type: pandas.ExcelDataSet
+  filepath: data/01_raw/data_G.xlsx
+  load_args:
+    engine: openpyxl
+
+data_G_loaded:
+  type: pandas.ParquetDataSet
+  filepath: data/02_intermediate/data_G_loaded.pq
+
+data_minmaxstd:
+  type: pandas.ParquetDataSet
+  filepath: data/02_intermediate/data_minmaxstd.pq
+
+data_convolutions:
+  type: pandas.ParquetDataSet
+  filepath: data/02_intermediate/data_convolutions.pq
+
+data_filtered:
+  type: pandas.ParquetDataSet
+  filepath: data/02_intermediate/data_filtered.pq
+
+
+df_f:
+  type: pandas.ParquetDataSet
+  filepath: data/02_intermediate/df_f.pq
+
+df_t:
+  type: pandas.ParquetDataSet
+  filepath: data/02_intermediate/df_t.pq
+
+df_Sxx:
+  type: pandas.ParquetDataSet
+  filepath: data/02_intermediate/df_Sxx.pq
+
+df_intensities:
+  type: pandas.ParquetDataSet
+  filepath: data/02_intermediate/df_intensities.pq
+
+df_lines:
+  type: pandas.ParquetDataSet
+  filepath: data/02_intermediate/df_lines.pq
+
+df_intensities_rel:
+  type: pandas.ParquetDataSet
+  filepath: data/02_intermediate/df_intensities_rel.pq
+
+df_KL:
+  type: pandas.ParquetDataSet
+  filepath: data/02_intermediate/df_KL.pq
+
+df_components:
+  type: pandas.ParquetDataSet
+  filepath: data/02_intermediate/df_components.pq
+
+df_G_evaluated:
+  type: pandas.ParquetDataSet
+  filepath: data/02_intermediate/df_G_evaluated.pq
+
+df_minmaxstd_evaluated:
+  type: pandas.ParquetDataSet
+  filepath: data/02_intermediate/df_minmaxstd_evaluated.pq
+
+df_average_evaluated:
+  type: pandas.ParquetDataSet
+  filepath: data/02_intermediate/df_average_evaluated.pq
+
+df_lines_evaluated:
+  type: pandas.ParquetDataSet
+  filepath: data/02_intermediate/df_lines_evaluated.pq
+
+df_KL_evaluated:
+  type: pandas.ParquetDataSet
+  filepath: data/02_intermediate/df_KL_evaluated.pq
+
+df_components_evaluated:
+  type: pandas.ParquetDataSet
+  filepath: data/02_intermediate/df_components_evaluated.pq
